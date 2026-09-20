@@ -12,9 +12,28 @@
         h1{
             color:red;
         }
-        div{
-            background-color: yellow;
+       
+        .seccion
+        {
+            background-color: green;
+            padding: 20px 40px;
+            margin:20px;
+            border: 10px Hidden black;
         }
+
+        .seccion2{
+            background-color: blue;
+            padding-top:20px;
+            padding-left:40px;
+            padding-bottom:20px;
+            padding-right:40px;
+
+            margin-top:20px;
+            margin-right:30px;
+            margin-bottom:40px;
+            margin-left:50px;
+        }
+
     </style>
 </head>
 
@@ -26,9 +45,22 @@
     <h5>Hola Crayola!</h5>
     <h6>Hola Crayola!</h6>
 
-    <div>
+    <div class = "seccion">
         <h2>Hola Crayola!</h2>
-        <p>Este es un parrafo de ejemplo</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit 
+        quis quasi sed veritatis voluptatum sint voluptatibus, aut obcaecati 
+        ipsa quaerat minima similique ratione totam asperiores repellendus 
+        cupiditate repudiandae ea eos. 
+       </p>
+    </div>
+
+    <div  class = "seccion2"> 
+        <h2>Hola Crayola!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit 
+        quis quasi sed veritatis voluptatum sint voluptatibus, aut obcaecati 
+        ipsa quaerat minima similique ratione totam asperiores repellendus 
+        cupiditate repudiandae ea eos.
+       </p>  
     </div>
 
 </body>
