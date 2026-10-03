@@ -1,37 +1,181 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi Curriculum</title>
 </head>
-<body>
-    <div class = "cv">
-        <header class = "encabezado" style="display: flex; background-color: rgba(78, 132, 224, 0.645);">
-            <div class = "foto">
-                <img src = "img/fotouwu.jpeg" alt = "imagen de un archivo" style = "width:160 ; padding: 20px; border-radius: 80px;">
+<body style="background-color: lightgray; font-family: Arial;">
+
+    <div class="cv" style="width: 800px; margin: auto; background-color: white;">
+
+       
+        <header class="encabezado" style="padding: 20px; display: flex; background-color: lightblue;">
+
+            <div class="foto">
+                <img fotouwu.jpg alt="Foto de perfil"
+                style="width: 120px; height: 120px; padding: 10px; border-radius: 50%;">
             </div>
-            <div class = "informacion-personal" style = "padding: 40px">
-                <h2>Israel Solis Lopez</h2>
+
+            <div class="informacion_personal" style="padding: 15px;">
+                <h2>Israel Solis Lopezs</h2>
                 <h3>Estudiante de Ingeniería en Sistemas Computacionales</h3>
             </div>
-        </header>    
-       <main class = "contenido" style = "display: grid; grid-template-columns: 35% 65%;">
-            <div class = "columna-izquierda" stye="background-color: lightblue; padding: 20px;">
-                <h2>Información Personal</h2>
-                <p><strong>Nombre:</strong> Israel Solis Lopez</p>
-                <p><strong>Fecha de Nacimiento:</strong> 15 de marzo de 2003</p>
-                <p><strong>Dirección:</strong> Calle Falsa 123, Ciudad, País</p>
-                <p><strong>Teléfono:</strong> +52 123 456 7890</p>
-                <p><strong>Email:</strong>
+
+        </header>
+
+        <!-- CONTENIDO -->
+        <main class="contenido" style="display: grid; grid-template-columns: 30% 70%;">
+
+            <!-- COLUMNA IZQUIERDA -->
+            <div class="columna-izquierda" style="padding: 20px; background-color: lightgreen;">
+
+                <!-- CONTACTO -->
+                <section class="CONTACTO">
+                    <h4>CONTACTO</h4>
+                    <ul>
+                        <li>Teléfono: (55) 1234-5678</li>
+                        <li>Correo: gael@gmail.com</li>
+                        <li>Ubicación: México</li>
+                        <li>GitHub: github.com/usuario</li>
+                    </ul>
+                </section>
+
+                <!-- HABILIDADES -->
+                <section class="Habilidades">
+                    <h4>HABILIDADES</h4>
+                    <ul>
+                        <li>Programación en Java</li>
+                        <li>JavaScript</li>
+                        <li>HTML y CSS</li>
+                        <li>Python básico</li>
+                        <li>Bases de datos SQL</li>
+                        <li>Resolución de problemas</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Responsabilidad</li>
+                    </ul>
+                </section>
+
+                <!-- EDUCACION -->
+                <section class="Educacion">
+                    <h4>EDUCACIÓN</h4>
+
+                    <ul>
+                        <li><strong>Ingeniería en Sistemas Computacionales</strong></li>
+                        <p>Nombre de la universidad</p>
+                        <p>2023 - Actualidad</p>
+                    </ul>
+
+                    <ul>
+                        <li><strong>Educación Media Superior</strong></li>
+                        <p>Nombre de la preparatoria</p>
+                        <p>2020 - 2023</p>
+                    </ul>
+                </section>
+
+                <!-- CONOCIMIENTOS -->
+                <section>
+                    <h4>CONOCIMIENTOS</h4>
+                    <ul>
+                        <li>Programación orientada a objetos</li>
+                        <li>Diseño de páginas web</li>
+                        <li>Manejo de bases de datos</li>
+                        <li>Git y GitHub</li>
+                    </ul>
+                </section>
 
             </div>
-       </main>
+
+            <!-- COLUMNA DERECHA -->
+            <div class="columna-derecha" style="padding: 20px; background-color: lightgray;">
+
+                <!-- ACERCA DE MI -->
+                <section>
+                    <h4>ACERCA DE MÍ</h4>
+                    <p style="text-align: justify;">
+                        Soy estudiante de Ingeniería en Sistemas Computacionales
+                        con interés en la tecnología, la programación y el
+                        desarrollo de software. Me considero una persona
+                        responsable, creativa y con disposición para aprender
+                        nuevas habilidades. Me gusta trabajar en equipo,
+                        resolver problemas y adquirir nuevos conocimientos
+                        que contribuyan a mi formación profesional.
+                    </p>
+                </section>
+
+                <!-- EXPERIENCIA LABORAL -->
+                <section>
+                    <h4>EXPERIENCIA LABORAL</h4>
+
+                    <div>
+                        <h4>Desarrollo de proyectos académicos</h4>
+                        <p>Estudiante de Ingeniería en Sistemas Computacionales</p>
+                        <p>Actualidad</p>
+                        <p style="text-align: justify;">
+                            Participación en el desarrollo de programas y
+                            aplicaciones utilizando diferentes lenguajes
+                            de programación. Realización de actividades
+                            relacionadas con el diseño de interfaces,
+                            programación y manejo de bases de datos.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- PROYECTOS -->
+                <section>
+                    <h4>PROYECTOS</h4>
+
+                    <div>
+                        <h4>Sistema SmartEnergy</h4>
+                        <p>Java y MySQL</p>
+                        <p style="text-align: justify;">
+                            Desarrollo de una aplicación para administrar
+                            dispositivos y viviendas, utilizando interfaces
+                            gráficas en Java y conexión a una base de datos
+                            para almacenar información.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4>Sistema de pedidos de restaurante</h4>
+                        <p>JavaScript</p>
+                        <p style="text-align: justify;">
+                            Creación de un sistema que permite agregar,
+                            modificar, eliminar y buscar productos,
+                            utilizando arreglos y funciones para
+                            administrar los pedidos.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4>Página web personal</h4>
+                        <p>HTML y CSS</p>
+                        <p style="text-align: justify;">
+                            Diseño y desarrollo de una página web utilizando
+                            HTML para la estructura y CSS para los estilos
+                            y la presentación de los elementos.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- OBJETIVO -->
+                <section>
+                    <h4>OBJETIVO PROFESIONAL</h4>
+                    <p style="text-align: justify;">
+                        Adquirir experiencia en el área de desarrollo
+                        de software, mejorar mis habilidades de
+                        programación y participar en proyectos que
+                        me permitan aplicar los conocimientos
+                        obtenidos durante mi formación académica.
+                    </p>
+                </section>
+
+            </div>
+
+        </main>
 
     </div>
-   
 
-
-    
 </body>
 </html>
