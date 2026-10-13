@@ -34,8 +34,8 @@
                     <tr>
                         <th>matricula</th>
                         <th>nombre</th>
-                        <th>apellido_p</th>
-                        <th>apellido_m</th>
+                        <th>apellido paterno</th>
+                        <th>apellido materno</th>
                         <th>edad</th>
                     </tr>
                 </thead>
@@ -49,6 +49,10 @@
                         <td><?php echo $row['apellido_p']?></td>
                         <td><?php echo $row['apellido_m']?></td>
                         <td><?php echo $row['edad']?></td>
+
+                        <td>
+                            <a href= "delete.php?matricula=<?php echo $row['matricula'];?>">Eliminar</a>
+                        </td>
                     </tr>
                     <?php
                             }
