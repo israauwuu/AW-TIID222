@@ -52,7 +52,9 @@
 
                         <td>
                             <a href= "delete.php?matricula=<?php echo $row['matricula'];?>">Eliminar</a>
+                            <a href= "editar.php?matricula=<?php echo $row['matricula'];?>">Editar</a>
                         </td>
+
                     </tr>
                     <?php
                             }
