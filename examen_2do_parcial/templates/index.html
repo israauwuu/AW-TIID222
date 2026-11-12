@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <h1>Gestion de papeleria</h1>
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <h3>{{ message }}</h3>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <form action="/guardar" method="POST">
+            <input type="text" name="Nombre" placeholder="Escribe el nombre del prodcuto">
+            <input type="text" name="Descripcion" placeholder="Escribe la descripcion">
+            <input type="text" name="Precio" placeholder="Escribe el precio">
+            <input type="text" name="Stock" placeholder="Escribe el stock">
+            <button class="btn btn-soft btn-primary" type="submit">Guardar</button>  
+        </form>
+
+        <div class="overflow-x-auto">
+            <table class="table table-zebra">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Descripcion</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for producto in productos %}
+                    <tr>
+                        <td>{{ producto.0 }}</td>
+                        <td>{{ producto.1 }}</td>
+                        <td>{{ producto.2 }}</td>
+                        <td>{{ producto.3 }}</td>
+                        <td>{{ producto.4 }}</td>
+                        <td>
+                            <a href="/editar/{{ producto.0 }}">Editar</a>
+                            <a href="/eliminar/{{ producto.0 }}">Eliminar</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</html>
